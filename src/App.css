@@ -1,0 +1,11 @@
+.App {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #7CB518;
+  text-align: center;
+  height: 100vh;
+}
+
