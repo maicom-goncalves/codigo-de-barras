@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import Scanner from './Scanner';
-import ReactDOM from "react-dom";
+import './Cammera.css'
 
 function Cammera() {
-  const [camera, setCamera] = useState(false);
+  const [camera, setCamera] = useState(true);
   const [result, setResult] = useState(null);
 
   const onDetected = result => {
     setResult(result);
+    if(result !==''){
+            setCamera(!camera);
+            
+        }
+    console.log(result);
   };
 
   return (
     <div className="camera">
       <p>{result ? result : "Scanning..."}</p>
-      <button onClick={() => setCamera(!camera)}>
-        {camera ? "Stop" : "Start"}
-      </button>
       <div className="container">
         {camera && <Scanner onDetected={onDetected} />}
       </div>

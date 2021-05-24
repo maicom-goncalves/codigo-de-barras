@@ -1,6 +1,6 @@
 //import axios from 'axios';
-import Barcode from '../pages/main'
-import { codigoDeBarras } from '../pages/main'
+import Barcode from '../pages/Main'
+import { codigoDeBarras } from '../pages/Main'
 export default class ListaService {
     constructor() {
         this.Barcode = '';

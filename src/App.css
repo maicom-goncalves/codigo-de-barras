@@ -1,7 +1,7 @@
 .App {
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   background-color: #7CB518;
@@ -9,3 +9,11 @@
   height: 100vh;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 1024px) and (orientation-portrait){
+  .App {
+    flex-direction: row;
+    text-align: justify;
+    height: 50vh;
+    width: 200vh;
+  }
+}
