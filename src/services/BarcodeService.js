@@ -1,12 +1,25 @@
-//import axios from 'axios';
-import Barcode from '../pages/Main'
-import { codigoDeBarras } from '../pages/Main'
+import axios from 'axios';
+
 export default class ListaService {
     constructor() {
-        this.Barcode = '';
-        codebr = codigoDeBarras;
-        console.log(codebr + 'teste testado')
+        this.api = axios.create({
+            baseURL: ''
+        });   
     }
- 
 
+    async salvar(result) {
+        console.log(result+" teste");
+        await this.api.post('/', result);
+        
+    }
+   /* async atualizar(result) {
+        await this.api.put(`/${result}`);
+
+    }*/
 }
+
+
+
+
+
+

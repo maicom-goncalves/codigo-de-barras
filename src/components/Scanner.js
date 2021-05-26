@@ -15,8 +15,6 @@ const Scanner = props => {
         Quagga.stop()
       }
     });
-
-    //detecting boxes on stream
     Quagga.onProcessed(result => {
       var drawingCtx = Quagga.canvas.ctx.overlay,
         drawingCanvas = Quagga.canvas.dom.overlay;
@@ -64,8 +62,12 @@ const Scanner = props => {
 
   const detected = result => {
     onDetected(result.codeResult.code);
-  };
+    /*if (result.codeResult.code != '') {
+      Quagga.stop()
+    }*/
 
+  };
+  
 
   return (
     <div id="interactive" className="viewport" />
