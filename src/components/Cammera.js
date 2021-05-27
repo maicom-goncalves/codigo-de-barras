@@ -4,8 +4,8 @@ import BarcodeService from '../services/BarcodeService'
 import './Cammera.css'
 
 function Cammera() {
-
-  const [camera, setCamera] = useState(true);
+  
+  const [camera,setCamera] = useState(false);
   const [result, setResult] = useState(null);
  
   const service = new BarcodeService();
@@ -15,10 +15,11 @@ function Cammera() {
     if (result !== '') {
       setCamera(!camera);
       service.salvar(result);
+      result = '';
     }
-    
     console.log(result);
   };
+
 
   return (
     <div className="camera">

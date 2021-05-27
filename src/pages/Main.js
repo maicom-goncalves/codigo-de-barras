@@ -25,7 +25,7 @@ class Main extends React.Component {
                 </button>
 
                 <br />
-                <Modal
+                <Modal 
                     visible={this.state.modal1Visible}
                     onOk={() => this.setModal1Visible(false)}
                     onCancel={() => this.setModal1Visible(false)}>
