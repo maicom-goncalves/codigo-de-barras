@@ -5,7 +5,7 @@ import './Cammera.css'
 
 function Cammera() {
   
-  const [camera,setCamera] = useState(false);
+  const [camera,setCamera] = useState(true);
   const [result, setResult] = useState(null);
  
   const service = new BarcodeService();
