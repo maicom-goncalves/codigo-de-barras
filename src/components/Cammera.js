@@ -27,7 +27,11 @@ function Cammera() {
       </p>
       <div className="container">
         {camera && <Scanner onDetected={onDetected} />}
-        <button onClick={() => setCamera(!camera)} className="botao">ler proximo</button>
+        {camera?
+          "":
+          <button onClick={() => setCamera(!camera)} className="botao">ler proximo</button>
+          
+          }
       </div>
 
     </div>
