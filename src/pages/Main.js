@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from 'antd';
-import qrcode from '../img/qrcode002.png'
-import barcode from '../img/barcode003.jpg'
+import qrcode from '../img/qrcode-02.png'
+import barcode from '../img/barcode-03.svg'
 import Cammera from '../components/Cammera'
 import 'antd/dist/antd.css';
 import "./main.css"
@@ -37,6 +37,5 @@ class Main extends React.Component {
             </div>
         )
     }
-
 }
 export default Main;

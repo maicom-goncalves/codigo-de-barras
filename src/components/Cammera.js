@@ -5,6 +5,7 @@ import BarcodeService from '../services/BarcodeService'
 import './Cammera.css'
 
 function Cammera() {
+
   const service = new BarcodeService();
   const [camera, setCamera] = useState(true);
   const [result, setResult] = useState(null);
@@ -21,15 +22,19 @@ function Cammera() {
 
   return (
     <div className="camera">
-      {<p><b>{ result ? result : ""}</b></p>}
+      <p className="result" >
+        <b>{result ? result : ""}</b>
+      </p>
       <div className="container">
         {camera && <Scanner onDetected={onDetected} />}
+        <button onClick={() => setCamera(!camera)} className="botao">ler proximo</button>
       </div>
-      &nbsp;
-      <button onClick={()=>setCamera(!camera)} className="botao">ler proximo</button>
+
     </div>
   );
 
+
 }
+
 
 export default Cammera;
