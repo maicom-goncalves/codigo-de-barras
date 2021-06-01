@@ -5,7 +5,6 @@ import BarcodeService from '../services/BarcodeService'
 import './Cammera.css'
 
 function Cammera() {
-
   const service = new BarcodeService();
   const [camera, setCamera] = useState(true);
   const [result, setResult] = useState(null);
@@ -32,6 +31,5 @@ function Cammera() {
   );
 
 }
-
 
 export default Cammera;
