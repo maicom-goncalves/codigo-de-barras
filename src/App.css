@@ -8,12 +8,18 @@
   text-align: center;
   height: 100vh;
 }
+a{
+  text-decoration: none;
+  color:black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px; 
+}
 
 @media only screen and (min-width: 360px) and (max-width: 1024px) and (orientation-portrait){
   .App {
     flex-direction: row;
     text-align: justify;
     height: 50vh;
-    width: 200vh;
+    width: 150vh;
   }
 }
