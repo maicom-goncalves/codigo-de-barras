@@ -14,12 +14,24 @@ a{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px; 
 }
-
-@media only screen and (min-width: 360px) and (max-width: 1024px) and (orientation-portrait){
+.ant-modal-footer{
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .App {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px;
+    padding: 100px;
+    
+  }
+}
+@media only screen and (min-width: 720px) and (max-height: 375px) and (orientation-landscape){
   .App {
     flex-direction: row;
     text-align: justify;
     height: 50vh;
-    width: 150vh;
+    width: 100vh;
   }
 }

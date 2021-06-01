@@ -23,28 +23,26 @@
     margin-right: 19px;
     margin-top: 3px;
 }
-
-
-/*.modal1:target {
-  opacity: 1;
-  pointer-events: auto;
+@media only screen and (min-width: 1024px) {
+  .barcode{
+     font-size: 28px;
+     margin-bottom: 33%;
+ }
+  .icone-barcode{
+    width: 257px;
+    height: 220px;
+    margin-top: 3px;
+  }
+  .icone-qrcode{
+      width: 210px;
+      height: 222px;
+      margin-left: 18px;
+      margin-right: 19px;
+      margin-top: 3px;
+  }
 }
-.modal1 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgba(0,0,0,0.8);
-  z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}*/
-@media only screen and (min-width: 360px) and (max-height: 1024px) and (orientation-portrait){
+
+@media only screen and (min-width: 1024px) and (max-height: 360px) and (orientation-portrait){
 
   .ant-modal {
     -webkit-transform: rotate(90deg);
@@ -57,7 +55,6 @@
     top: 0px;
     left: 0;
     position: absolute;
-    /*max-width: calc(100vw - 32px);*/
     margin: 0;
     padding:0;
     

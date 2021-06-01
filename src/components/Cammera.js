@@ -20,13 +20,13 @@ function Cammera() {
     console.log(result);
   };
 
-
   return (
     <div className="camera">
       {<p><b>{ result ? result : ""}</b></p>}
       <div className="container">
         {camera && <Scanner onDetected={onDetected} />}
       </div>
+      &nbsp;
       <button onClick={()=>setCamera(!camera)} className="botao">ler proximo</button>
     </div>
   );
