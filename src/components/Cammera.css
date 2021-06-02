@@ -23,25 +23,28 @@
     position:absolute;
   }
   .botao {
-    background-color: #f1f1f1;
+    background-color: #255C99;
+    /*#1A5E63
+    #E43F6F*/
     border: none;
-    color: #140f0f;
-    padding: 7px 63px;
+    color:#fffbfc;
+    padding: 28px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 #13161433, 0 6px 20px 0 #1a271d30;
+    margin:25px;
   }
   .ant-modal-content {
     position: relative;
-    background-color: #f57811;
+    background-color: #F7F7F7;
     border-radius: 12px;
     box-shadow: 0 3px 6px -4px rgba(22, 7, 7, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(161, 35, 35, 0.0.5);
   }
   .ant-modal-close {
-    color: #000000d5;
+    color: #030303;
     text-decoration: none;
     background: transparent;
     transition: color 0.3s;
@@ -56,8 +59,8 @@
        -webkit-transform: rotate(90deg);
        -moz-transform: rotate(90deg);
        transform: rotate(90deg);
-       min-width: 100%;
-       min-height: 100%;
+       /*min-width: 80%;
+       min-height: 80%;*/
        width: 40%;
        height: 90%;
        top: 0;
