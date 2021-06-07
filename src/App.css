@@ -1,9 +1,6 @@
 .App {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 20%;
   background-color: #7CB518;
   text-align: center;
   height: 100vh;
@@ -27,11 +24,8 @@ a{
     
   }
 }
-@media only screen and (min-width: 720px) and (max-height: 375px) and (orientation-landscape){
-  .App {
-    flex-direction: row;
-    text-align: justify;
-    height: 50vh;
-    width: 100vh;
+@media only screen and (min-width:640px) and (min-height:360px){
+  .App{
+    padding: 1%;
   }
 }
